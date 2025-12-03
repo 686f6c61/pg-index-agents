@@ -1,0 +1,146 @@
+# PG Index Agents - Git Ignore
+# https://github.com/686f6c61/pg-index-agents
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# ============================================
+# Node.js / Next.js
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# ============================================
+# IDE / Editor
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ============================================
+# Environment Variables (IMPORTANTE)
+# ============================================
+# Nunca subir archivos .env con credenciales
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+
+# ============================================
+# Databases
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+state.db
+backend/state.db
+
+# Data dumps descargados
+data/
+*.7z
+*.xml.gz
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+/tmp/
+
+# ============================================
+# OS Files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# Build / Distribution
+# ============================================
+dist/
+build/
+*.egg-info/
+
+# ============================================
+# Testing / Coverage
+# ============================================
+coverage/
+.nyc_output/
+htmlcov/
+.coverage
+.tox/
+.nox/
+
+# ============================================
+# Temporary Files
+# ============================================
+*.tmp
+*.temp
+*.bak
+.cache/
+*.pid
+
+# ============================================
+# Secrets / Credentials
+# ============================================
+*.pem
+*.key
+*.crt
+credentials.json
+secrets.json
+service-account.json
+google-credentials.json
+
+# ============================================
+# Misc
+# ============================================
+.vercel
+.turbo
