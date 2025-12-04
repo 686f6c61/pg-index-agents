@@ -11,6 +11,8 @@ Sistema de agentes inteligentes para analisis y optimizacion automatica de indic
 
 Este proyecto es una prueba de concepto que explora la aplicacion de modelos de lenguaje en tareas de administracion de bases de datos. El sistema utiliza multiples agentes especializados que colaboran para analizar, diagnosticar y proponer mejoras en la estructura de indices de una base de datos PostgreSQL.
 
+![Databases Overview](assets/PG%20Index%20Agents%2001.png)
+
 ## Tabla de contenidos
 
 - [Hipotesis](#hipotesis)
@@ -93,6 +95,12 @@ Explorer --> Observer --> Architect --> Gardener --> Partitioner
 ```
 
 Cada agente puede ejecutarse de forma independiente, pero los resultados son mas completos cuando se ejecutan en secuencia, ya que cada uno enriquece el contexto disponible para el siguiente.
+
+![Database Dashboard](assets/PG%20Index%20Agents%2002.png)
+
+Cada agente incluye informacion detallada sobre su flujo de trabajo, los datos que recopila y el output que genera:
+
+![Agent Info Modal](assets/PG%20Index%20Agents%2003.png)
 
 ---
 
@@ -346,6 +354,58 @@ El panel de base de datos contiene las siguientes secciones:
 Para ejecutar un agente, seleccionalo en el panel de agentes y haz clic en el boton de ejecucion. El agente se ejecutara en segundo plano y podras ver su progreso en tiempo real.
 
 Los resultados de cada agente se muestran en la pestana correspondiente. Las propuestas de indices generadas por el Architect requieren aprobacion manual antes de ejecutarse.
+
+### Deteccion de anomalias
+
+El sistema detecta automaticamente anomalias como indices faltantes, indices no utilizados, e indices redundantes, clasificandolas por severidad:
+
+![Anomalies Detection](assets/PG%20Index%20Agents%2004.png)
+
+### Grafo de dependencias
+
+Visualizacion interactiva de las relaciones entre tablas, mostrando foreign keys y dependencias inferidas:
+
+![Dependencies Graph](assets/PG%20Index%20Agents%2005.png)
+
+### Senales y analisis con IA
+
+Las senales detectadas por el Observer incluyen explicaciones generadas por IA que ayudan a entender el problema y su solucion:
+
+![Signals with AI](assets/PG%20Index%20Agents%2006.png)
+
+El analisis detallado incluye diagnostico del problema, causa raiz, solucion recomendada y justificacion tecnica:
+
+![Detailed AI Analysis](assets/PG%20Index%20Agents%2007.png)
+
+### Tareas de mantenimiento
+
+El Gardener genera tareas de mantenimiento con explicaciones detalladas sobre por que son necesarias:
+
+![Maintenance Tasks](assets/PG%20Index%20Agents%2008.png)
+
+### Recomendaciones de particionamiento
+
+El Partitioner analiza tablas grandes y genera recomendaciones de particionamiento con comandos SQL listos para ejecutar:
+
+![Partitioning Recommendations](assets/PG%20Index%20Agents%2009.png)
+
+### Informe ejecutivo
+
+Resumen ejecutivo generado por IA con el estado general de la base de datos, hallazgos principales y prioridades recomendadas:
+
+![Executive Report](assets/PG%20Index%20Agents%2010.png)
+
+### Configuracion y datos de ejemplo
+
+La pagina de Setup incluye instrucciones para importar bases de datos de ejemplo:
+
+![Setup Page](assets/PG%20Index%20Agents%2011.png)
+
+### Monitor de actividad
+
+Panel de monitoreo de jobs en background y logs del sistema en tiempo real:
+
+![Activity Monitor](assets/PG%20Index%20Agents%2012.png)
 
 ---
 
